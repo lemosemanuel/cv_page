@@ -3,68 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi CV</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>Curriculum Vitae - Emanuel Lemos</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>¡Hola, soy Emanuel Lemos!</h1>
-        <p>Desarrollador Full Stack y Científico de Datos con experiencia en múltiples tecnologías.</p>
+        <nav>
+            <ul>
+                <li><a href="#about"><img src="assets/icons/user.svg" alt="Sobre Mí"> Sobre Mí</a></li>
+                <li><a href="#skills"><img src="assets/icons/skills.svg" alt="Habilidades"> Habilidades</a></li>
+                <li><a href="#experience"><img src="assets/icons/experience.svg" alt="Experiencia"> Experiencia</a></li>
+                <li><a href="#education"><img src="assets/icons/education.svg" alt="Formación"> Formación</a></li>
+                <li><a href="#contact"><img src="assets/icons/contact.svg" alt="Contacto"> Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-    
-    <section id="skills">
-        <h2>Habilidades</h2>
-        <input type="text" id="searchSkills" placeholder="Buscar habilidades...">
-        <div id="skillsContainer">
-            <!-- Lenguajes de Programación -->
-            <div class="skill-category">
-                <h3><i class="fas fa-code"></i> Lenguajes de Programación</h3>
-                <p>Python, JavaScript (ES6+), Dart, C#, Kotlin, Swift, SQL, Bash, HTML5, CSS3, TypeScript.</p>
-            </div>
-            <!-- Frameworks y Librerías -->
-            <div class="skill-category">
-                <h3><i class="fas fa-layer-group"></i> Frameworks y Librerías</h3>
-                <p><strong>Backend:</strong> Flask, Django, FastAPI, Express.js, Nest.js, Node.js, ASP.NET Core.</p>
-                <p><strong>Frontend:</strong> ReactJS, Next.js, Angular, Vue.js, Bootstrap, Tailwind CSS.</p>
-                <p><strong>Mobile:</strong> Flutter, React Native, SwiftUI, Jetpack Compose.</p>
-            </div>
-            <!-- Ciencia de Datos e Inteligencia Artificial -->
-            <div class="skill-category">
-                <h3><i class="fas fa-brain"></i> Ciencia de Datos e Inteligencia Artificial</h3>
-                <!-- Aquí irían las habilidades de Ciencia de Datos e IA -->
-            </div>
-            <!-- Añadir más categorías con iconos -->
+
+    <section id="hero">
+        <div class="hero-content">
+            <img src="assets/img/emanuel.jpg" alt="Foto de Emanuel Lemos" class="profile-pic">
+            <h1>Emanuel Lemos</h1>
+            <h2>Tecnología y Business</h2>
+            <p>Data Scientist y Full Stack Developer | Experto en Inteligencia Artificial y Desarrollo de Aplicaciones | Apasionado por la Innovación y el Equilibrio entre Tecnología y Vida Activa y Deporte</p>
         </div>
     </section>
 
-    <section id="experience">
-        <h2>Experiencia Laboral</h2>
-        <div class="experience-carousel">
-            <div class="experience-item">
-                <h3>Tech Lead</h3>
-                <button class="accordion">Ver más</button>
-                <div class="panel">
-                    <p>A cargo de un equipo de desarrollo de 43 personas...</p>
-                    <!-- Detalles completos de la experiencia -->
-                </div>
+    <section id="about" class="content-section">
+        <h3>Sobre Mí</h3>
+        <p>Soy un profesional dedicado con una vasta experiencia en tecnología y negocios. Mi pasión radica en aplicar inteligencia artificial y técnicas avanzadas de desarrollo para crear soluciones que impulsen la innovación en diversos sectores. Equilibro mi vida profesional con una fuerte dedicación al deporte y la vida saludable.</p>
+    </section>
+
+    <section id="skills" class="content-section">
+        <h3>Habilidades Técnicas</h3>
+        <div class="skills-grid">
+            <div class="skill">
+                <h4><img src="assets/icons/code.svg" alt="Lenguajes"> Lenguajes de Programación</h4>
+                <p>Python, JavaScript (ES6+), Dart, C#, Kotlin, Swift, SQL, Bash, HTML5, CSS3, TypeScript.</p>
             </div>
-            <div class="experience-item">
-                <h3>Ingeniero de Software</h3>
-                <button class="accordion">Ver más</button>
-                <div class="panel">
-                    <p>Durante mi tiempo en Indra...</p>
-                    <!-- Detalles completos de la experiencia -->
-                </div>
+            <div class="skill">
+                <h4><img src="assets/icons/framework.svg" alt="Frameworks"> Frameworks y Librerías</h4>
+                <p>Flask, Django, ReactJS, Flutter, TensorFlow, PyTorch, etc.</p>
             </div>
-            <!-- Añadir más experiencias laborales -->
+            <div class="skill">
+                <h4><img src="assets/icons/database.svg" alt="Bases de Datos"> Bases de Datos</h4>
+                <p>PostgreSQL, MongoDB, Cassandra, Redis, Amazon DynamoDB, etc.</p>
+            </div>
+            <div class="skill">
+                <h4><img src="assets/icons/cloud.svg" alt="Cloud Computing"> Cloud Computing</h4>
+                <p>AWS, Azure, Google Cloud, Huawei Cloud.</p>
+            </div>
         </div>
+    </section>
+
+    <section id="experience" class="content-section">
+        <h3>Experiencia Laboral</h3>
+        <div class="experience-grid">
+            <div class="experience-entry">
+                <h4>Teach Lead</h4>
+                <h5>Emergencias (Argentina) | Febrero 2021 - Diciembre 2022</h5>
+                <p>A cargo de un equipo de desarrollo de 43 personas...</p>
+                <a href="#" class="see-more">Ver más</a>
+            </div>
+            <div class="experience-entry">
+                <h4>Ingeniero de Software en el Departamento de Defensa Aeroespacial</h4>
+                <h5>Indra (España) | Enero 2023 - Agosto 2024</h5>
+                <p>Desarrollo de emuladores para señales satelitales...</p>
+                <a href="#" class="see-more">Ver más</a>
+            </div>
+            <!-- Más experiencias aquí -->
+        </div>
+    </section>
+
+    <section id="education" class="content-section">
+        <h3>Formación Académica</h3>
+        <ul>
+            <li>Master en Data Science (UBA)</li>
+            <li>Data Science Curso (Digital House)</li>
+            <li>Licenciado en Administración de empresas</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="content-section">
+        <h3>Contacto</h3>
+        <p>Email: <a href="mailto:Lemos.ema@gmail.com">Lemos.ema@gmail.com</a></p>
+        <p>Cel: +34 627602177</p>
+        <p>MADRID</p>
     </section>
 
     <footer>
-        <p>Contacto: <i class="fas fa-envelope"></i> correo@ejemplo.com | <i class="fas fa-phone"></i> +123 456 789</p>
+        <p>&copy; 2024 Emanuel Lemos - Todos los derechos reservados</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
