@@ -27,7 +27,7 @@ header nav ul {
 }
 
 header nav ul li {
-    margin: 0 15px; /* Espacio entre los elementos */
+    margin: 0 15 px; /* Espacio entre los elementos */
 }
 
 header nav ul li a {
