@@ -21,13 +21,11 @@ header {
 header nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
-    display: flex; /* Alinea los elementos en una fila */
-    justify-content: center; /* Centra los elementos en el contenedor */
 }
 
 header nav ul li {
-    margin: 0 15 px; /* Espacio entre los elementos */
+    display: inline;
+    margin: 0 15px;
 }
 
 header nav ul li a {
