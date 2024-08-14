@@ -1,71 +1,86 @@
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
+    background-color: #007BFF;
+    color: white;
     text-align: center;
+    padding: 20px;
 }
 
-header nav ul {
-    list-style: none;
-    padding: 0;
+h1, h2 {
+    margin: 0;
 }
 
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
+section {
+    margin: 20px;
 }
 
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
+.skill-category {
+    background-color: #e7e7e7;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
 }
 
-#hero {
-    background: url('../assets/img/hero-bg.jpg') no-repeat center center/cover;
-    color: #fff;
-    height: 100vh;
+.skill-category h3 {
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+#searchSkills {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.experience-carousel {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    overflow-x: auto;
 }
 
-.profile-pic {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    margin-bottom: 20px;
+.experience-item {
+    min-width: 300px;
+    background-color: #e7e7e7;
+    border-radius: 10px;
+    margin-right: 20px;
+    padding: 15px;
 }
 
-.content-section {
-    padding: 50px 20px;
-    max-width: 1000px;
-    margin: auto;
+.accordion {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
-.skills-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.experience-entry {
-    margin-bottom: 20px;
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
 footer {
+    background-color: #007BFF;
+    color: white;
     text-align: center;
-    padding: 20px 0;
-    background-color: #333;
-    color: #fff;
+    padding: 10px 0;
+    margin-top: 20px;
 }
