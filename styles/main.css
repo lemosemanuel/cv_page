@@ -21,6 +21,8 @@ header {
 header nav ul {
     list-style: none;
     padding: 0;
+    display: flex; /* Alinea los elementos en una fila */
+    justify-content: center;
 }
 
 header nav ul li {
