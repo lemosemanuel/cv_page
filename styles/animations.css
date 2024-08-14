@@ -1,0 +1,16 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.content-section {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.profile-pic {
+    animation: fadeIn 2s ease-in-out;
+}
