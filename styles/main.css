@@ -1,8 +1,28 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #6b73ff 0%, #000dff 100%);
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
 header nav ul {
-    list-style: none; /* Quita los puntos de las listas */
+    list-style: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Hace que los elementos se alineen horizontalmente */
+    display: flex; /* Alinea los elementos en una fila */
     justify-content: center; /* Centra los elementos en el contenedor */
 }
 
@@ -11,15 +31,15 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #fff; /* Color del texto */
-    text-decoration: none; /* Quita el subrayado de los enlaces */
-    font-weight: bold; /* Negrita */
-    display: flex; /* Alinea el icono y el texto horizontalmente */
-    align-items: center; /* Centra verticalmente el icono y el texto */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
 }
 
-header nav ul li a span.material-icons {
-    margin-right: 8px; /* Espacio entre el icono y el texto */
+header nav ul li a img {
+    margin-right: 8px;
 }
 
 #hero {
