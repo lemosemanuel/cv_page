@@ -8,16 +8,18 @@
     <link rel="stylesheet" href="styles/animations.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#about"><img src="assets/icons/user.svg" alt="Sobre Mí"> Sobre Mí</a></li>
-                <li><a href="#skills"><img src="assets/icons/skills.svg" alt="Habilidades"> Habilidades</a></li>
-                <li><a href="#experience"><img src="assets/icons/experience.svg" alt="Experiencia"> Experiencia</a></li>
-                <li><a href="#education"><img src="assets/icons/education.svg" alt="Formación"> Formación</a></li>
-                <li><a href="#contact"><img src="assets/icons/contact.svg" alt="Contacto"> Contacto</a></li>
+                <li><a href="#about"><span class="material-icons">person</span> Sobre Mí</a></li>
+                <li><a href="#skills"><span class="material-icons">code</span> Habilidades</a></li>
+                <li><a href="#experience"><span class="material-icons">work</span> Experiencia</a></li>
+                <li><a href="#education"><span class="material-icons">school</span> Formación</a></li>
+                <li><a href="#contact"><span class="material-icons">email</span> Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -58,66 +60,23 @@
         </div>
     </section>
 
-    <section id="experience" class="experience">
-        <h2>Experiencia Laboral</h2>
-        
-        <!-- Head of Data Science -->
-        <div class="experience-item">
-            <h3>Head of Data Science</h3>
-            <p>Raine and Horne (Dubai), Abril 2019 - Febrero 2020</p>
-            <div class="short-description">
-                <p>A cargo del equipo de Datos. Liderando la implementación de soluciones de data science para análisis de mercado...</p>
+    <section id="experience" class="content-section">
+        <h3>Experiencia Laboral</h3>
+        <div class="experience-grid">
+            <div class="experience-entry">
+                <h4>Teach Lead</h4>
+                <h5>Emergencias (Argentina) | Febrero 2021 - Diciembre 2022</h5>
+                <p>A cargo de un equipo de desarrollo de 43 personas...</p>
                 <a href="#" class="see-more">Ver más</a>
             </div>
-            <div class="full-description" style="display:none;">
-                <p>A cargo del equipo de Datos, analizando y estudiando el mercado mediante la implementación de técnicas avanzadas de data science. Se realizaron actividades como web scraping para descubrir posibles leads y estudiar el comportamiento del consumidor. Desarrollamos algoritmos de machine learning y deep learning, incluyendo modelos de clasificación, clustering, árboles de decisión, XGBoost, LSTM, redes convolucionales (CNN), reducción de dimensiones y procesamiento de lenguaje natural (NLP). Los resultados y análisis se presentaban en herramientas visuales como Tableau para la toma de decisiones por parte de la dirección.</p>
-                <p><strong>Stack Tecnológico:</strong> Python, NumPy, Pandas, SciPy, OpenCV, Keras, Scikit-Learn, TensorFlow, PyTorch, Matplotlib, Seaborn, SQL, NoSQL, PySpark, Databrick, Git, GitHub</p>
-            </div>
-        </div>
-        
-        <!-- Desarrollador Data Science -->
-        <div class="experience-item">
-            <h3>Desarrollador Data Science</h3>
-            <p>Urban finca (Australia), Junio 2017 - Marzo 2018</p>
-            <div class="short-description">
-                <p>Desarrollo de algoritmos para análisis de ventas, creando estrategias de cross-selling y clustering...</p>
+            <div class="experience-entry">
+                <h4>Ingeniero de Software en el Departamento de Defensa Aeroespacial</h4>
+                <h5>Indra (España) | Enero 2023 - Agosto 2024</h5>
+                <p>Desarrollo de emuladores para señales satelitales...</p>
                 <a href="#" class="see-more">Ver más</a>
             </div>
-            <div class="full-description" style="display:none;">
-                <p>En este proyecto, desarrollé algoritmos avanzados para aumentar las ventas a través de estrategias de cross-selling, incluyendo la venta de vuelos, renta de autos, excursiones, hoteles y cruceros. Realicé análisis de datos utilizando técnicas de clustering y presenté los resultados internamente para el equipo y externamente a gerencia y marketing mediante Tableau. </p>
-                <p><strong>Stack Tecnológico:</strong> Python, NumPy, Pandas, BeautifulSoup, Scrapy, Selenium, MongoDB, SciPy, OpenCV, Keras, Scikit-Learn, TensorFlow, PyTorch, Matplotlib, Seaborn, SQL, NoSQL, Spark, Git, GitHub</p>
-            </div>
+            <!-- Más experiencias aquí -->
         </div>
-        
-        <!-- Tech Lead -->
-        <div class="experience-item">
-            <h3>Tech Lead</h3>
-            <p>Almundo (Argentina), Mayo 2018 - Marzo 2019</p>
-            <div class="short-description">
-                <p>Liderando un equipo de desarrollo de 43 personas, gestionando proyectos de desarrollo Mobile y Web...</p>
-                <a href="#" class="see-more">Ver más</a>
-            </div>
-            <div class="full-description" style="display:none;">
-                <p>Como Tech Lead, estuve a cargo de un equipo de desarrollo compuesto por profesionales de diversas áreas: Backend, Frontend, Mobile, Data Science, Arquitectura de Datos, DevOps, QA y UX/UI. Mi rol incluía la planificación de presupuestos, seguimiento de proyectos Mobile y Web, y la comunicación directa con el CTO. Nos enfocamos en el desarrollo de software limpio, escalable y documentado, utilizando metodologías Agile y Scrum. También supervisé la migración de todos los datos on-premise a la nube y la implementación de pipelines CI/CD con Docker y Kubernetes. Trabajé estrechamente con el equipo de Data en la implementación de algoritmos de machine learning y deep learning para el análisis de datos masivos clínicos.</p>
-                <p><strong>Stack Tecnológico:</strong> Python, Django, NumPy, Pandas, SciPy, OpenCV, TensorFlow, PyTorch, PySpark, Unittest, Selenium, JavaScript, SQL, PostgreSQL, Docker, Kubernetes, YAML, ReactJS, Kotlin, Swift, AWS, Huawei Cloud, Git, GitHub</p>
-            </div>
-        </div>
-        
-        <!-- Ingeniero de Software en el Departamento de Defensa Aeroespacial -->
-        <div class="experience-item">
-            <h3>Ingeniero de Software en el Departamento de Defensa Aeroespacial</h3>
-            <p>Indra, Enero 2023 - Agosto 2024</p>
-            <div class="short-description">
-                <p>Desarrollo de emuladores para señales satelitales, asegurando precisión en la gestión de sistemas aeroespaciales...</p>
-                <a href="#" class="see-more">Ver más</a>
-            </div>
-            <div class="full-description" style="display:none;">
-                <p>Durante mi tiempo en Indra, trabajé en el Departamento de Defensa Aeroespacial, desarrollando emuladores avanzados para señales satelitales. Estos emuladores eran cruciales para simular escenarios reales con una precisión milimétrica, lo cual era esencial para evitar errores significativos en la localización. Implementé algoritmos avanzados de inteligencia artificial y técnicas de física para la corrección de ruido, asegurando la máxima integridad de las señales procesadas. El entorno de desarrollo era altamente seguro, utilizando Docker para la gestión de entornos y redes privadas para la protección de datos sensibles.</p>
-                <p><strong>Tecnologías y Herramientas:</strong> Python, C, Procesos Paralelos, Inteligencia Artificial, Física Aplicada, Docker, Redes Privadas de Seguridad</p>
-            </div>
-        </div>
-    
-        <!-- Más experiencias pueden agregarse aquí -->
     </section>
 
     <section id="education" class="content-section">
