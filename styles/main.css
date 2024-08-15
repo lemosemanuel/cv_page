@@ -2,9 +2,10 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #6b73ff 0%, #000dff 100%);
+    background: linear-gradient(#6b73ff, rgb(164, 239, 139) 27.73%, rgb(22, 34, 255) 65.13%, #000dff 70.17%, rgb(150, 245, 151) 93.7%);
     color: #333;
     line-height: 1.6;
+    text-align: center;
 }
 
 header {
@@ -52,6 +53,7 @@ header nav ul li a img {
     align-items: center;
     text-align: center;
     padding-top: 60px;
+    margin: 20px;
 }
 
 .profile-pic {
