@@ -76,6 +76,15 @@ header nav ul li a img {
     gap: 20px;
 }
 
+.skill h4 {
+    display: flex;
+    align-items: center;
+}
+
+.skill h4 .material-icons {
+    font-size: 24px; /* Asegúrate de que el tamaño del icono se ajuste bien con el texto */
+    margin-right: 8px; /* Espacio entre el icono y el texto */
+}
 .experience-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
