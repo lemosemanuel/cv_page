@@ -4,7 +4,7 @@ document.querySelectorAll('.see-more').forEach(button => {
         const id = button.getAttribute('data-id');
         const moreInfo = document.getElementById(id);
         
-        if (moreInfo.style.display === "none") {
+        if (moreInfo.style.display === "none" || moreInfo.style.display === "") {
             moreInfo.style.display = "block";
             button.textContent = "Ver menos";
         } else {
@@ -24,10 +24,19 @@ document.getElementById('skill-search').addEventListener('input', function() {
         if (skillText.includes(query)) {
             skill.style.display = 'block';
 
-            // Resaltado del texto buscado
-            const regex = new RegExp(query, 'gi');
-            skill.innerHTML = skill.innerHTML.replace(/<span class="highlight">|<\/span>/g, ''); // Eliminar cualquier resaltado previo
-            skill.innerHTML = skill.innerHTML.replace(regex, match => `<span class="highlight">${match}</span>`);
+            // Resaltado del texto buscado sin romper el HTML
+            const skillNameElement = skill.querySelector('p');
+            if (skillNameElement) {
+                const originalHTML = skillNameElement.innerHTML;
+                const regex = new RegExp(query, 'gi');
+
+                // Restablece el contenido original antes de aplicar el resaltado
+                skillNameElement.innerHTML = originalHTML.replace(/<span class="highlight">|<\/span>/g, '');
+
+                // Aplica el resaltado
+                skillNameElement.innerHTML = skillNameElement.textContent.replace(regex, match => `<span class="highlight">${match}</span>`);
+            }
+
         } else {
             skill.style.display = 'none';
         }
