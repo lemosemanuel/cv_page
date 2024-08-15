@@ -3,122 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae - Emanuel Lemos</title>
+    <title id="page-title">Curriculum Vitae - Emanuel Lemos</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/animations.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="scripts/main.js" defer></script>
 </head>
 
 <body>
     <header>
         <nav>
+            <button id="language-toggle">Español</button>
             <ul>
-                <li><a href="#about"><span class="material-icons">person</span> <span class="es">Sobre Mí</span><span class="en" style="display:none;">About Me</span></a></li>
-                <li><a href="#skills"><span class="material-icons">code</span> <span class="es">Habilidades</span><span class="en" style="display:none;">Skills</span></a></li>
-                <li><a href="#experience"><span class="material-icons">work</span> <span class="es">Experiencia</span><span class="en" style="display:none;">Experience</span></a></li>
-                <li><a href="#education"><span class="material-icons">school</span> <span class="es">Formación</span><span class="en" style="display:none;">Education</span></a></li>
-                <li><a href="#contact"><span class="material-icons">email</span> <span class="es">Contacto</span><span class="en" style="display:none;">Contact</span></a></li>
+                <li><a href="#about"><span class="material-icons">person</span> <span class="text-about">Sobre Mí</span></a></li>
+                <li><a href="#skills"><span class="material-icons">code</span> <span class="text-skills">Habilidades</span></a></li>
+                <li><a href="#experience"><span class="material-icons">work</span> <span class="text-experience">Experiencia</span></a></li>
+                <li><a href="#education"><span class="material-icons">school</span> <span class="text-education">Formación</span></a></li>
+                <li><a href="#contact"><span class="material-icons">email</span> <span class="text-contact">Contacto</span></a></li>
             </ul>
-            <button id="language-toggle" onclick="toggleLanguage()">Cambiar a Inglés</button>
         </nav>
     </header>
 
     <section id="hero">
         <div class="hero-content">
             <img src="assets/img/emanuel.jpeg" alt="Foto de Emanuel Lemos" class="profile-pic">
-            <h1><span class="es">Emanuel Lemos</span><span class="en" style="display:none;">Emanuel Lemos</span></h1>
-            <h2><span class="es">Tecnología y Business</span><span class="en" style="display:none;">Technology and Business</span></h2>
-            <p><span class="es">Data Scientist y Full Stack Developer | Experto en Inteligencia Artificial y Desarrollo de Aplicaciones | Apasionado por la Innovación y el Equilibrio entre Tecnología y Vida Activa y Deporte</span><span class="en" style="display:none;">Data Scientist and Full Stack Developer | Expert in Artificial Intelligence and Application Development | Passionate about Innovation and Balancing Technology with an Active and Sporty Lifestyle</span></p>
+            <h1 id="hero-name">Emanuel Lemos</h1>
+            <h2 id="hero-title">Tecnología y Business</h2>
+            <p id="hero-description">Data Scientist y Full Stack Developer | Experto en Inteligencia Artificial y Desarrollo de Aplicaciones | Apasionado por la Innovación y el Equilibrio entre Tecnología y Vida Activa y Deporte</p>
         </div>
     </section>
 
     <section id="about" class="content-section">
-        <h3><span class="es">Sobre Mí</span><span class="en" style="display:none;">About Me</span></h3>
-        <p><span class="es">Soy un profesional dedicado con una vasta experiencia en tecnología y negocios. Mi pasión radica en aplicar inteligencia artificial y técnicas avanzadas de desarrollo para crear soluciones que impulsen la innovación en diversos sectores. Equilibro mi vida profesional con una fuerte dedicación al deporte y la vida saludable.</span><span class="en" style="display:none;">I am a dedicated professional with extensive experience in technology and business. My passion lies in applying artificial intelligence and advanced development techniques to create solutions that drive innovation across various sectors. I balance my professional life with a strong dedication to sports and a healthy lifestyle.</span></p>
+        <h3 id="about-title">Sobre Mí</h3>
+        <p id="about-description">Soy un profesional dedicado con una vasta experiencia en tecnología y negocios. Mi pasión radica en aplicar inteligencia artificial y técnicas avanzadas de desarrollo para crear soluciones que impulsen la innovación en diversos sectores. Equilibro mi vida profesional con una fuerte dedicación al deporte y la vida saludable.</p>
     </section>
 
     <section id="skills" class="content-section">
-        <h3><span class="es">Habilidades Técnicas</span><span class="en" style="display:none;">Technical Skills</span></h3>
+        <h3 id="skills-title">Habilidades Técnicas</h3>
         
         <!-- Campo de búsqueda -->
         <input type="text" id="skill-search" placeholder="Busca una habilidad..." class="search-box">
     
         <div class="skills-grid" id="skills-grid">
             <div class="skill">
-                <h4><span class="material-icons">code</span> <span class="es">Lenguajes de Programación</span><span class="en" style="display:none;">Programming Languages</span></h4>
-                <p><span class="es">Python, JavaScript (ES6+), Dart, C#, Kotlin, Swift, SQL, Bash, HTML5, CSS3, TypeScript.</span><span class="en" style="display:none;">Python, JavaScript (ES6+), Dart, C#, Kotlin, Swift, SQL, Bash, HTML5, CSS3, TypeScript.</span></p>
+                <h4><span class="material-icons">code</span> <span class="text-skill-lang">Lenguajes de Programación</span></h4>
+                <p id="skill-lang">Python, JavaScript (ES6+), Dart, C#, Kotlin, Swift, SQL, Bash, HTML5, CSS3, TypeScript.</p>
             </div>
             <div class="skill">
-                <h4><span class="material-icons">code</span> <span class="es">Frameworks y Librerías</span><span class="en" style="display:none;">Frameworks and Libraries</span></h4>
-                <p><span class="es">Backend: Flask, Django, FastAPI, Express.js, Nest.js, Node.js, ASP.NET Core. Frontend: ReactJS, Next.js, Angular, Vue.js, Bootstrap, Tailwind CSS. Mobile: Flutter, React Native, SwiftUI, Jetpack Compose.</span><span class="en" style="display:none;">Backend: Flask, Django, FastAPI, Express.js, Nest.js, Node.js, ASP.NET Core. Frontend: ReactJS, Next.js, Angular, Vue.js, Bootstrap, Tailwind CSS. Mobile: Flutter, React Native, SwiftUI, Jetpack Compose.</span></p>
+                <h4><span class="material-icons">code</span> <span class="text-skill-framework">Frameworks y Librerías</span></h4>
+                <p id="skill-framework">Backend: Flask, Django, FastAPI, Express.js, Nest.js, Node.js, ASP.NET Core. Frontend: ReactJS, Next.js, Angular, Vue.js, Bootstrap, Tailwind CSS. Mobile: Flutter, React Native, SwiftUI, Jetpack Compose.</p>
             </div>
-            <div class="skill">
-                <h4><span class="material-icons">storage</span> <span class="es">Bases de Datos</span><span class="en" style="display:none;">Databases</span></h4>
-                <p>
-                    <strong><span class="es">Relacionales (SQL):</span><span class="en" style="display:none;">Relational (SQL):</span></strong> <span class="es">PostgreSQL, MySQL, SQLite, Microsoft SQL Server, Oracle Database.</span><span class="en" style="display:none;">PostgreSQL, MySQL, SQLite, Microsoft SQL Server, Oracle Database.</span><br>
-                    <strong><span class="es">NoSQL:</span><span class="en" style="display:none;">NoSQL:</span></strong> <span class="es">MongoDB, Cassandra, Redis, Amazon DynamoDB, CouchDB.</span><span class="en" style="display:none;">MongoDB, Cassandra, Redis, Amazon DynamoDB, CouchDB.</span>
-                </p>
-            </div>
-            <div class="skill">
-                <h4><span class="material-icons">cloud_upload</span> <span class="es">Cloud Computing</span><span class="en" style="display:none;">Cloud Computing</span></h4>
-                <p>
-                    <strong><span class="es">AWS:</span><span class="en" style="display:none;">AWS:</span></strong> <span class="es">RDS, Aurora, DynamoDB, Redshift.</span><span class="en" style="display:none;">RDS, Aurora, DynamoDB, Redshift.</span><br>
-                    <strong><span class="es">Azure:</span><span class="en" style="display:none;">Azure:</span></strong> <span class="es">SQL Database, Cosmos DB.</span><span class="en" style="display:none;">SQL Database, Cosmos DB.</span><br>
-                    <strong><span class="es">Google Cloud:</span><span class="en" style="display:none;">Google Cloud:</span></strong> <span class="es">Cloud SQL, Firestore.</span><span class="en" style="display:none;">Cloud SQL, Firestore.</span><br>
-                    <strong><span class="es">Huawei Cloud:</span><span class="en" style="display:none;">Huawei Cloud:</span></strong> <span class="es">RDS, DWS (Data Warehouse Service).</span><span class="en" style="display:none;">RDS, DWS (Data Warehouse Service).</span>
-                </p>
-            </div>
-            <div class="skill">
-                <h4><span class="material-icons">takeout_dining</span> <span class="es">Virtualización y Contenerización</span><span class="en" style="display:none;">Virtualization and Containerization</span></h4>
-                <p>
-                    <span class="es">Docker, Kubernetes, OpenShift, Vagrant, Ansible, Terraform.</span><span class="en" style="display:none;">Docker, Kubernetes, OpenShift, Vagrant, Ansible, Terraform.</span>
-                </p>
-            </div>
-            <div class="skill">
-                <h4><span class="material-icons">security</span> <span class="es">Seguridad</span><span class="en" style="display:none;">Security</span></h4>
-                <p>
-                    <span class="es">Seguridad de aplicaciones, cifrado de datos, autenticación y autorización, protección contra ataques XSS y CSRF, seguridad en la nube.</span><span class="en" style="display:none;">Application security, data encryption, authentication and authorization, protection against XSS and CSRF attacks, cloud security.</span>
-                </p>
-            </div>
+            <!-- Agrega el resto de las habilidades aquí -->
         </div>
     </section>
 
     <section id="experience" class="content-section">
-        <h3><span class="es">Experiencia</span><span class="en" style="display:none;">Experience</span></h3>
-        <div class="experience-item">
-            <h4><span class="es">Data Scientist</span><span class="en" style="display:none;">Data Scientist</span> | <span class="es">Innovación AI</span><span class="en" style="display:none;">Innovation AI</span></h4>
-            <p><span class="es">Febrero 2020 - Presente</span><span class="en" style="display:none;">February 2020 - Present</span></p>
-            <p><span class="es">Desarrollé modelos predictivos para optimizar procesos empresariales, realizando análisis de datos y visualización para la toma de decisiones estratégicas.</span><span class="en" style="display:none;">Developed predictive models to optimize business processes, conducting data analysis and visualization for strategic decision-making.</span></p>
-        </div>
-        <div class="experience-item">
-            <h4><span class="es">Full Stack Developer</span><span class="en" style="display:none;">Full Stack Developer</span> | <span class="es">Tech Solutions</span><span class="en" style="display:none;">Tech Solutions</span></h4>
-            <p><span class="es">Mayo 2017 - Enero 2020</span><span class="en" style="display:none;">May 2017 - January 2020</span></p>
-            <p><span class="es">Desarrollé y mantuve aplicaciones web y móviles, integrando diversas tecnologías y asegurando el cumplimiento de los estándares de calidad y seguridad.</span><span class="en" style="display:none;">Developed and maintained web and mobile applications, integrating various technologies and ensuring compliance with quality and security standards.</span></p>
+        <h2 id="experience-title">Experiencia Laboral</h2>
+
+        <div class="experience-grid">
+            <div class="experience-entry">
+                <h4 id="experience-job1">Ingeniero de Software en el Departamento de Defensa Aeroespacial</h4>
+                <h5 id="experience-date1">Indra (España) | Enero 2023 - Agosto 2024</h5>
+                <p id="experience-description1">Desarrollo de emuladores para señales satelitales...</p>
+                <a href="#" class="see-more" data-id="indra">Ver más</a>
+                <div class="more-info" id="indra" style="display: none;">
+                    <p id="experience-detail1">
+                        Durante mi tiempo en Indra, trabajé en el Departamento de Defensa Aeroespacial, participando en proyectos críticos relacionados con la gestión y operación de satélites. Mi rol principal incluía el desarrollo de emuladores para señales satelitales, los cuales eran esenciales para simular el comportamiento de los sistemas en escenarios reales...
+                    </p>
+                </div>
+            </div>
+            <!-- Agrega el resto de las experiencias aquí -->
         </div>
     </section>
 
     <section id="education" class="content-section">
-        <h3><span class="es">Formación</span><span class="en" style="display:none;">Education</span></h3>
-        <div class="education-item">
-            <h4><span class="es">Máster en Ciencia de Datos</span><span class="en" style="display:none;">Master's in Data Science</span></h4>
-            <p><span class="es">Universidad de Barcelona</span><span class="en" style="display:none;">University of Barcelona</span></p>
-            <p><span class="es">2018 - 2019</span><span class="en" style="display:none;">2018 - 2019</span></p>
-        </div>
-        <div class="education-item">
-            <h4><span class="es">Ingeniería en Sistemas de Información</span><span class="en" style="display:none;">Bachelor's in Information Systems Engineering</span></h4>
-            <p><span class="es">Universidad de Buenos Aires</span><span class="en" style="display:none;">University of Buenos Aires</span></p>
-            <p><span class="es">2013 - 2017</span><span class="en" style="display:none;">2013 - 2017</span></p>
-        </div>
+        <h2 id="education-title">Formación Académica</h2>
+        <ul>
+            <li id="education-item1">Master en Data Science (UBA)</li>
+            <li id="education-item2">Data Science Curso (Digital House)</li>
+            <li id="education-item3">Licenciado en Administración de empresas</li>
+        </ul>
     </section>
 
     <section id="contact" class="content-section">
-        <h3><span class="es">Contacto</span><span class="en" style="display:none;">Contact</span></h3>
-        <p><span class="es">Correo Electrónico: <a href="mailto:emanuel.lemos@example.com">emanuel.lemos@example.com</a></span><span class="en" style="display:none;">Email: <a href="mailto:emanuel.lemos@example.com">emanuel.lemos@example.com</a></span></p>
-        <p><span class="es">LinkedIn: <a href="https://www.linkedin.com/in/emanuel-lemos" target="_blank">linkedin.com/in/emanuel-lemos</a></span><span class="en" style="display:none;">LinkedIn: <a href="https://www.linkedin.com/in/emanuel-lemos" target="_blank">linkedin.com/in/emanuel-lemos</a></span></p>
-        <p><span class="es">GitHub: <a href="https://github.com/emanuel-lemos" target="_blank">github.com/emanuel-lemos</a></span><span class="en" style="display:none;">GitHub: <a href="https://github.com/emanuel-lemos" target="_blank">github.com/emanuel-lemos</a></span></p>
+        <h2 id="contact-title">Contacto</h2>
+        <p><span class="material-icons">mail</span> Email: <a href="mailto:Lemos.ema@gmail.com">Lemos.ema@gmail.com</a></p>
+        <p><span class="material-icons">smartphone</span> Cel: +34 627602177</p>
+        <p><span class="material-icons">location_on</span> MADRID</p>
     </section>
+
+    <footer>
+        <p>&copy; 2024 Emanuel Lemos - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
 </body>
 </html>
