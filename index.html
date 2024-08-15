@@ -14,14 +14,17 @@
 <body>
     <header>
         <nav>
-            <button id="language-toggle">Español</button>
             <ul>
-                <li><a href="#about"><span class="material-icons">person</span> <span class="text-about">Sobre Mí</span></a></li>
-                <li><a href="#skills"><span class="material-icons">code</span> <span class="text-skills">Habilidades</span></a></li>
-                <li><a href="#experience"><span class="material-icons">work</span> <span class="text-experience">Experiencia</span></a></li>
-                <li><a href="#education"><span class="material-icons">school</span> <span class="text-education">Formación</span></a></li>
-                <li><a href="#contact"><span class="material-icons">email</span> <span class="text-contact">Contacto</span></a></li>
+                <li><a href="#about"><span class="material-icons">person</span> <span id="nav-about">Sobre Mí</span></a></li>
+                <li><a href="#skills"><span class="material-icons">code</span> <span id="nav-skills">Habilidades</span></a></li>
+                <li><a href="#experience"><span class="material-icons">work</span> <span id="nav-experience">Experiencia</span></a></li>
+                <li><a href="#education"><span class="material-icons">school</span> <span id="nav-education">Formación</span></a></li>
+                <li><a href="#contact"><span class="material-icons">email</span> <span id="nav-contact">Contacto</span></a></li>
             </ul>
+            <select id="language-selector">
+                <option value="es">Español</option>
+                <option value="en">English</option>
+            </select>
         </nav>
     </header>
 
@@ -34,65 +37,8 @@
         </div>
     </section>
 
-    <section id="about" class="content-section">
-        <h3 id="about-title">Sobre Mí</h3>
-        <p id="about-description">Soy un profesional dedicado con una vasta experiencia en tecnología y negocios. Mi pasión radica en aplicar inteligencia artificial y técnicas avanzadas de desarrollo para crear soluciones que impulsen la innovación en diversos sectores. Equilibro mi vida profesional con una fuerte dedicación al deporte y la vida saludable.</p>
-    </section>
-
-    <section id="skills" class="content-section">
-        <h3 id="skills-title">Habilidades Técnicas</h3>
-        
-        <!-- Campo de búsqueda -->
-        <input type="text" id="skill-search" placeholder="Busca una habilidad..." class="search-box">
+    <!-- Más secciones aquí con id para el contenido -->
     
-        <div class="skills-grid" id="skills-grid">
-            <div class="skill">
-                <h4><span class="material-icons">code</span> <span class="text-skill-lang">Lenguajes de Programación</span></h4>
-                <p id="skill-lang">Python, JavaScript (ES6+), Dart, C#, Kotlin, Swift, SQL, Bash, HTML5, CSS3, TypeScript.</p>
-            </div>
-            <div class="skill">
-                <h4><span class="material-icons">code</span> <span class="text-skill-framework">Frameworks y Librerías</span></h4>
-                <p id="skill-framework">Backend: Flask, Django, FastAPI, Express.js, Nest.js, Node.js, ASP.NET Core. Frontend: ReactJS, Next.js, Angular, Vue.js, Bootstrap, Tailwind CSS. Mobile: Flutter, React Native, SwiftUI, Jetpack Compose.</p>
-            </div>
-            <!-- Agrega el resto de las habilidades aquí -->
-        </div>
-    </section>
-
-    <section id="experience" class="content-section">
-        <h2 id="experience-title">Experiencia Laboral</h2>
-
-        <div class="experience-grid">
-            <div class="experience-entry">
-                <h4 id="experience-job1">Ingeniero de Software en el Departamento de Defensa Aeroespacial</h4>
-                <h5 id="experience-date1">Indra (España) | Enero 2023 - Agosto 2024</h5>
-                <p id="experience-description1">Desarrollo de emuladores para señales satelitales...</p>
-                <a href="#" class="see-more" data-id="indra">Ver más</a>
-                <div class="more-info" id="indra" style="display: none;">
-                    <p id="experience-detail1">
-                        Durante mi tiempo en Indra, trabajé en el Departamento de Defensa Aeroespacial, participando en proyectos críticos relacionados con la gestión y operación de satélites. Mi rol principal incluía el desarrollo de emuladores para señales satelitales, los cuales eran esenciales para simular el comportamiento de los sistemas en escenarios reales...
-                    </p>
-                </div>
-            </div>
-            <!-- Agrega el resto de las experiencias aquí -->
-        </div>
-    </section>
-
-    <section id="education" class="content-section">
-        <h2 id="education-title">Formación Académica</h2>
-        <ul>
-            <li id="education-item1">Master en Data Science (UBA)</li>
-            <li id="education-item2">Data Science Curso (Digital House)</li>
-            <li id="education-item3">Licenciado en Administración de empresas</li>
-        </ul>
-    </section>
-
-    <section id="contact" class="content-section">
-        <h2 id="contact-title">Contacto</h2>
-        <p><span class="material-icons">mail</span> Email: <a href="mailto:Lemos.ema@gmail.com">Lemos.ema@gmail.com</a></p>
-        <p><span class="material-icons">smartphone</span> Cel: +34 627602177</p>
-        <p><span class="material-icons">location_on</span> MADRID</p>
-    </section>
-
     <footer>
         <p>&copy; 2024 Emanuel Lemos - Todos los derechos reservados</p>
     </footer>
