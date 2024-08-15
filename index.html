@@ -15,16 +15,15 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#about"><span class="material-icons">person</span> <span id="nav-about">Sobre Mí</span></a></li>
-                <li><a href="#skills"><span class="material-icons">code</span> <span id="nav-skills">Habilidades</span></a></li>
-                <li><a href="#experience"><span class="material-icons">work</span> <span id="nav-experience">Experiencia</span></a></li>
-                <li><a href="#education"><span class="material-icons">school</span> <span id="nav-education">Formación</span></a></li>
-                <li><a href="#contact"><span class="material-icons">email</span> <span id="nav-contact">Contacto</span></a></li>
+                <li><a href="#about"><span class="material-icons">person</span> <span data-translate="about">Sobre Mí</span></a></li>
+                <li><a href="#skills"><span class="material-icons">code</span> <span data-translate="skills">Habilidades</span></a></li>
+                <li><a href="#experience"><span class="material-icons">work</span> <span data-translate="experience">Experiencia</span></a></li>
+                <li><a href="#education"><span class="material-icons">school</span> <span data-translate="education">Formación</span></a></li>
+                <li><a href="#contact"><span class="material-icons">email</span> <span data-translate="contact">Contacto</span></a></li>
+                <li>
+                    <button id="lang-switch" data-lang="es">EN</button>
+                </li>
             </ul>
-            <select id="language-selector">
-                <option value="es">Español</option>
-                <option value="en">English</option>
-            </select>
         </nav>
     </header>
 
@@ -37,10 +36,125 @@
         </div>
     </section>
 
-    <!-- Más secciones aquí con id para el contenido -->
+    <section id="about" class="content-section">
+        <h3 data-translate="about-title">Sobre Mí</h3>
+        <p id="about-description">Soy un profesional dedicado con una vasta experiencia en tecnología y negocios. Mi pasión radica en aplicar inteligencia artificial y técnicas avanzadas de desarrollo para crear soluciones que impulsen la innovación en diversos sectores. Equilibro mi vida profesional con una fuerte dedicación al deporte y la vida saludable.</p>
+    </section>
+
+    <section id="skills" class="content-section">
+        <h3 data-translate="skills-title">Habilidades Técnicas</h3>
+        
+        <!-- Campo de búsqueda -->
+        <input type="text" id="skill-search" placeholder="Busca una habilidad..." class="search-box">
     
+        <div class="skills-grid" id="skills-grid">
+            <div class="skill">
+                <h4><span class="material-icons">code</span> <span data-translate="programming-languages">Lenguajes de Programación</span></h4>
+                <p>Python, JavaScript (ES6+), Dart, C#, Kotlin, Swift, SQL, Bash, HTML5, CSS3, TypeScript.</p>
+            </div>
+            <div class="skill">
+                <h4><span class="material-icons">code</span> <span data-translate="frameworks-libraries">Frameworks y Librerías</span></h4>
+                <p>Backend: Flask, Django, FastAPI, Express.js, Nest.js, Node.js, ASP.NET Core. Frontend: ReactJS, Next.js, Angular, Vue.js, Bootstrap, Tailwind CSS. Mobile: Flutter, React Native, SwiftUI, Jetpack Compose.</p>
+            </div>
+            <div class="skill">
+                <h4><span class="material-icons">storage</span> <span data-translate="databases">Bases de Datos</span></h4>
+                <p>
+                    <strong>Relacionales (SQL):</strong> PostgreSQL, MySQL, SQLite, Microsoft SQL Server, Oracle Database.<br>
+                    <strong>NoSQL:</strong> MongoDB, Cassandra, Redis, Amazon DynamoDB, CouchDB.
+                </p>
+            </div>
+            <div class="skill">
+                <h4><span class="material-icons">cloud_upload</span> <span data-translate="cloud-computing">Cloud Computing</span></h4>
+                <p>
+                    <strong>AWS:</strong> RDS, Aurora, DynamoDB, Redshift.<br>
+                    <strong>Azure:</strong> SQL Database, Cosmos DB.<br>
+                    <strong>Google Cloud:</strong> Cloud SQL, Firestore.<br>
+                    <strong>Huawei Cloud:</strong> RDS, DWS (Data Warehouse Service).
+                </p>
+            </div>
+            <div class="skill">
+                <h4><span class="material-icons">takeout_dining</span> <span data-translate="virtualization">Virtualización y Contenerización</span></h4>
+                <p>
+                    Docker, Kubernetes, OpenShift, Vagrant, Ansible, Terraform.
+                </p>
+            </div>
+            <div class="skill">
+                <h4><span class="material-icons">publish</span> <span data-translate="devops">DevOps y CI/CD</span></h4>
+                <p>
+                    Jenkins, GitLab CI/CD, GitHub Actions.
+                </p>
+            </div>
+            <div class="skill">
+                <h4><span class="material-icons">publish</span> <span data-translate="version-control">Control de Versiones y Gestión de Código</span></h4>
+                <p>
+                    Git, GitHub, GitLab, Bitbucket, Mercurial, SVN.
+                </p>
+            </div>
+            <div class="skill">
+                <h4><span class="material-icons">terminal</span> <span data-translate="operating-systems">Sistemas Operativos</span></h4>
+                <p>
+                    Ubuntu, Debian, CentOS, Red Hat, macOS, Windows Server, Windows 10/11.
+                </p>
+            </div>
+            <div class="skill">
+                <h4><span class="material-icons">terminal</span> <span data-translate="others">Otros</span></h4>
+                <p>
+                    YAML, JSON, XML, RESTful APIs, GraphQL, OAuth, JWT, WebSockets, gRPC, Serverless Architectures, Microservicios, Agile/Scrum, TDD (Test-Driven Development).
+                </p>
+            </div>
+            <div class="skill">
+                <h4><span class="material-icons">psychology</span> <span data-translate="data-science">Ciencia de Datos e Inteligencia Artificial</span></h4>
+                <p>
+                    <strong>Librerías de Datos:</strong> NumPy, Pandas, SciPy, Dask.<br>
+                    <strong>Machine Learning:</strong> Scikit-learn, TensorFlow, Keras, PyTorch, XGBoost, LightGBM.<br>
+                    <strong>Deep Learning:</strong> Redes Neuronales Convolucionales (CNN), Redes Recurrentes (LSTM, GRU), GANs, Autoencoders.<br>
+                    <strong>Procesamiento de Lenguaje Natural (NLP):</strong> NLTK, SpaCy, Transformers (Hugging Face).<br>
+                    <strong>Visión por Computadora:</strong> OpenCV, YOLO, Detectron2.<br>
+                    <strong>Big Data y Análisis Distribuido:</strong> PySpark, Apache Hadoop, Apache Kafka, Databricks, AWS EMR.<br>
+                    <strong>Visualización de Datos:</strong> Matplotlib, Seaborn, Plotly, Bokeh, Altair, Tableau, Power BI.<br>
+                    <strong>Web Scraping y Automatización:</strong> BeautifulSoup, Scrapy, Selenium.<br>
+                    <strong>Algoritmos y Técnicas de IA:</strong><br>
+                    <strong>Supervisados y No Supervisados:</strong> Regresiones, K-Means, SVM, Redes Bayesianas.<br>
+                    <strong>Ensamblaje de Modelos:</strong> Bagging, Boosting (AdaBoost, Gradient Boosting), Random Forest.<br>
+                    <strong>Optimización de Hiperparámetros:</strong> Grid Search, Random Search, Bayesian Optimization.<br>
+                    <strong>Reducción de Dimensiones:</strong> PCA, t-SNE, UMAP.<br>
+                    <strong>Modelado Predictivo y Series Temporales:</strong> ARIMA, Prophet, LSTM para Series Temporales.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="content-section">
+        <h2 data-translate="experience-title">Experiencia Laboral</h2>
+
+        <div class="experience-item">
+            <h3 data-translate="company-name">Nombre de la Empresa</h3>
+            <p data-translate="position">Posición</p>
+            <p data-translate="dates">Fechas</p>
+            <p data-translate="description">Descripción de la experiencia laboral.</p>
+        </div>
+        <!-- Agrega más experiencias aquí -->
+    </section>
+
+    <section id="education" class="content-section">
+        <h2 data-translate="education-title">Formación Académica</h2>
+
+        <div class="education-item">
+            <h3 data-translate="degree">Título Académico</h3>
+            <p data-translate="institution">Institución</p>
+            <p data-translate="dates">Fechas</p>
+            <p data-translate="description">Descripción del programa académico.</p>
+        </div>
+        <!-- Agrega más formación académica aquí -->
+    </section>
+
+    <section id="contact" class="content-section">
+        <h2 data-translate="contact-title">Contacto</h2>
+        <p data-translate="contact-info">Información de contacto aquí.</p>
+    </section>
+
     <footer>
-        <p>&copy; 2024 Emanuel Lemos - Todos los derechos reservados</p>
+        <p>&copy; 2024 Emanuel Lemos. Todos los derechos reservados.</p>
     </footer>
 
     <script src="scripts/main.js"></script>
