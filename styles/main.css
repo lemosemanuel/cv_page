@@ -117,6 +117,21 @@ header nav ul li a img {
 .see-more:hover {
     color: #6b73ff;
 }
+/* Campo de búsqueda */
+.search-box {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #000dff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Resaltar los textos encontrados */
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
 
 footer {
     text-align: center;
