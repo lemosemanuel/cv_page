@@ -9,226 +9,116 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="scripts/main.js" defer></script>
 </head>
 
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#about"><span class="material-icons">person</span> Sobre Mí</a></li>
-                <li><a href="#skills"><span class="material-icons">code</span> Habilidades</a></li>
-                <li><a href="#experience"><span class="material-icons">work</span>  Experiencia</a></li>
-                <li><a href="#education"><span class="material-icons">school</span>  Formación</a></li>
-                <li><a href="#contact"><span class="material-icons">email</span>  Contacto</a></li>
+                <li><a href="#about"><span class="material-icons">person</span> <span class="es">Sobre Mí</span><span class="en" style="display:none;">About Me</span></a></li>
+                <li><a href="#skills"><span class="material-icons">code</span> <span class="es">Habilidades</span><span class="en" style="display:none;">Skills</span></a></li>
+                <li><a href="#experience"><span class="material-icons">work</span> <span class="es">Experiencia</span><span class="en" style="display:none;">Experience</span></a></li>
+                <li><a href="#education"><span class="material-icons">school</span> <span class="es">Formación</span><span class="en" style="display:none;">Education</span></a></li>
+                <li><a href="#contact"><span class="material-icons">email</span> <span class="es">Contacto</span><span class="en" style="display:none;">Contact</span></a></li>
             </ul>
+            <button id="language-toggle" onclick="toggleLanguage()">Cambiar a Inglés</button>
         </nav>
     </header>
 
     <section id="hero">
         <div class="hero-content">
             <img src="assets/img/emanuel.jpeg" alt="Foto de Emanuel Lemos" class="profile-pic">
-            <h1>Emanuel Lemos</h1>
-            <h2>Tecnología y Business</h2>
-            <p>Data Scientist y Full Stack Developer | Experto en Inteligencia Artificial y Desarrollo de Aplicaciones | Apasionado por la Innovación y el Equilibrio entre Tecnología y Vida Activa y Deporte</p>
+            <h1><span class="es">Emanuel Lemos</span><span class="en" style="display:none;">Emanuel Lemos</span></h1>
+            <h2><span class="es">Tecnología y Business</span><span class="en" style="display:none;">Technology and Business</span></h2>
+            <p><span class="es">Data Scientist y Full Stack Developer | Experto en Inteligencia Artificial y Desarrollo de Aplicaciones | Apasionado por la Innovación y el Equilibrio entre Tecnología y Vida Activa y Deporte</span><span class="en" style="display:none;">Data Scientist and Full Stack Developer | Expert in Artificial Intelligence and Application Development | Passionate about Innovation and Balancing Technology with an Active and Sporty Lifestyle</span></p>
         </div>
     </section>
 
     <section id="about" class="content-section">
-        <h3>Sobre Mí</h3>
-        <p>Soy un profesional dedicado con una vasta experiencia en tecnología y negocios. Mi pasión radica en aplicar inteligencia artificial y técnicas avanzadas de desarrollo para crear soluciones que impulsen la innovación en diversos sectores. Equilibro mi vida profesional con una fuerte dedicación al deporte y la vida saludable.</p>
+        <h3><span class="es">Sobre Mí</span><span class="en" style="display:none;">About Me</span></h3>
+        <p><span class="es">Soy un profesional dedicado con una vasta experiencia en tecnología y negocios. Mi pasión radica en aplicar inteligencia artificial y técnicas avanzadas de desarrollo para crear soluciones que impulsen la innovación en diversos sectores. Equilibro mi vida profesional con una fuerte dedicación al deporte y la vida saludable.</span><span class="en" style="display:none;">I am a dedicated professional with extensive experience in technology and business. My passion lies in applying artificial intelligence and advanced development techniques to create solutions that drive innovation across various sectors. I balance my professional life with a strong dedication to sports and a healthy lifestyle.</span></p>
     </section>
 
     <section id="skills" class="content-section">
-        <h3>Habilidades Técnicas</h3>
+        <h3><span class="es">Habilidades Técnicas</span><span class="en" style="display:none;">Technical Skills</span></h3>
         
         <!-- Campo de búsqueda -->
         <input type="text" id="skill-search" placeholder="Busca una habilidad..." class="search-box">
     
         <div class="skills-grid" id="skills-grid">
             <div class="skill">
-                <h4><span class="material-icons">code</span> Lenguajes de Programación</h4>
-                <p>Python, JavaScript (ES6+), Dart, C#, Kotlin, Swift, SQL, Bash, HTML5, CSS3, TypeScript.</p>
+                <h4><span class="material-icons">code</span> <span class="es">Lenguajes de Programación</span><span class="en" style="display:none;">Programming Languages</span></h4>
+                <p><span class="es">Python, JavaScript (ES6+), Dart, C#, Kotlin, Swift, SQL, Bash, HTML5, CSS3, TypeScript.</span><span class="en" style="display:none;">Python, JavaScript (ES6+), Dart, C#, Kotlin, Swift, SQL, Bash, HTML5, CSS3, TypeScript.</span></p>
             </div>
             <div class="skill">
-                <h4><span class="material-icons">code</span> Frameworks y Librerías</h4>
-                <p>Backend: Flask, Django, FastAPI, Express.js, Nest.js, Node.js, ASP.NET Core. Frontend: ReactJS, Next.js, Angular, Vue.js, Bootstrap, Tailwind CSS. Mobile: Flutter, React Native, SwiftUI, Jetpack Compose.</p>
+                <h4><span class="material-icons">code</span> <span class="es">Frameworks y Librerías</span><span class="en" style="display:none;">Frameworks and Libraries</span></h4>
+                <p><span class="es">Backend: Flask, Django, FastAPI, Express.js, Nest.js, Node.js, ASP.NET Core. Frontend: ReactJS, Next.js, Angular, Vue.js, Bootstrap, Tailwind CSS. Mobile: Flutter, React Native, SwiftUI, Jetpack Compose.</span><span class="en" style="display:none;">Backend: Flask, Django, FastAPI, Express.js, Nest.js, Node.js, ASP.NET Core. Frontend: ReactJS, Next.js, Angular, Vue.js, Bootstrap, Tailwind CSS. Mobile: Flutter, React Native, SwiftUI, Jetpack Compose.</span></p>
             </div>
             <div class="skill">
-                <h4><span class="material-icons">storage</span> Bases de Datos</h4>
+                <h4><span class="material-icons">storage</span> <span class="es">Bases de Datos</span><span class="en" style="display:none;">Databases</span></h4>
                 <p>
-                    <strong>Relacionales (SQL):</strong> PostgreSQL, MySQL, SQLite, Microsoft SQL Server, Oracle Database.<br>
-                    <strong>NoSQL:</strong> MongoDB, Cassandra, Redis, Amazon DynamoDB, CouchDB.
+                    <strong><span class="es">Relacionales (SQL):</span><span class="en" style="display:none;">Relational (SQL):</span></strong> <span class="es">PostgreSQL, MySQL, SQLite, Microsoft SQL Server, Oracle Database.</span><span class="en" style="display:none;">PostgreSQL, MySQL, SQLite, Microsoft SQL Server, Oracle Database.</span><br>
+                    <strong><span class="es">NoSQL:</span><span class="en" style="display:none;">NoSQL:</span></strong> <span class="es">MongoDB, Cassandra, Redis, Amazon DynamoDB, CouchDB.</span><span class="en" style="display:none;">MongoDB, Cassandra, Redis, Amazon DynamoDB, CouchDB.</span>
                 </p>
             </div>
             <div class="skill">
-                <h4><span class="material-icons">cloud_upload</span> Cloud Computing</h4>
+                <h4><span class="material-icons">cloud_upload</span> <span class="es">Cloud Computing</span><span class="en" style="display:none;">Cloud Computing</span></h4>
                 <p>
-                    <strong>AWS:</strong> RDS, Aurora, DynamoDB, Redshift.<br>
-                    <strong>Azure:</strong> SQL Database, Cosmos DB.<br>
-                    <strong>Google Cloud:</strong> Cloud SQL, Firestore.<br>
-                    <strong>Huawei Cloud:</strong> RDS, DWS (Data Warehouse Service).
+                    <strong><span class="es">AWS:</span><span class="en" style="display:none;">AWS:</span></strong> <span class="es">RDS, Aurora, DynamoDB, Redshift.</span><span class="en" style="display:none;">RDS, Aurora, DynamoDB, Redshift.</span><br>
+                    <strong><span class="es">Azure:</span><span class="en" style="display:none;">Azure:</span></strong> <span class="es">SQL Database, Cosmos DB.</span><span class="en" style="display:none;">SQL Database, Cosmos DB.</span><br>
+                    <strong><span class="es">Google Cloud:</span><span class="en" style="display:none;">Google Cloud:</span></strong> <span class="es">Cloud SQL, Firestore.</span><span class="en" style="display:none;">Cloud SQL, Firestore.</span><br>
+                    <strong><span class="es">Huawei Cloud:</span><span class="en" style="display:none;">Huawei Cloud:</span></strong> <span class="es">RDS, DWS (Data Warehouse Service).</span><span class="en" style="display:none;">RDS, DWS (Data Warehouse Service).</span>
                 </p>
             </div>
             <div class="skill">
-                <h4><span class="material-icons">takeout_dining</span> Virtualización y Contenerización</h4>
+                <h4><span class="material-icons">takeout_dining</span> <span class="es">Virtualización y Contenerización</span><span class="en" style="display:none;">Virtualization and Containerization</span></h4>
                 <p>
-                    Docker, Kubernetes, OpenShift, Vagrant, Ansible, Terraform.
+                    <span class="es">Docker, Kubernetes, OpenShift, Vagrant, Ansible, Terraform.</span><span class="en" style="display:none;">Docker, Kubernetes, OpenShift, Vagrant, Ansible, Terraform.</span>
                 </p>
             </div>
             <div class="skill">
-                <h4><span class="material-icons">publish</span> DevOps y CI/CD</h4>
+                <h4><span class="material-icons">security</span> <span class="es">Seguridad</span><span class="en" style="display:none;">Security</span></h4>
                 <p>
-                    Jenkins, GitLab CI/CD, GitHub Actions.
-                </p>
-            </div>
-            <div class="skill">
-                <h4><span class="material-icons">publish</span> Control de Versiones y Gestión de Código</h4>
-                <p>
-                    Git, GitHub, GitLab, Bitbucket, Mercurial, SVN.
-                </p>
-            </div>
-            <div class="skill">
-                <h4><span class="material-icons">terminal</span> Sistemas Operativos</h4>
-                <p>
-                    Ubuntu, Debian, CentOS, Red Hat, macOS, Windows Server, Windows 10/11.
-                </p>
-            </div>
-            <div class="skill">
-                <h4><span class="material-icons">terminal</span> Otros</h4>
-                <p>
-                    YAML, JSON, XML, RESTful APIs, GraphQL, OAuth, JWT, WebSockets, gRPC, Serverless Architectures, Microservicios, Agile/Scrum, TDD (Test-Driven Development).
-                </p>
-            </div>
-            <div class="skill">
-                <h4><span class="material-icons">psychology</span> Ciencia de Datos e Inteligencia Artificial</h4>
-                <p>
-                    <strong>Librerías de Datos:</strong> NumPy, Pandas, SciPy, Dask.<br>
-                    <strong>Machine Learning:</strong> Scikit-learn, TensorFlow, Keras, PyTorch, XGBoost, LightGBM.<br>
-                    <strong>Deep Learning:</strong> Redes Neuronales Convolucionales (CNN), Redes Recurrentes (LSTM, GRU), GANs, Autoencoders.<br>
-                    <strong>Procesamiento de Lenguaje Natural (NLP):</strong> NLTK, SpaCy, Transformers (Hugging Face).<br>
-                    <strong>Visión por Computadora:</strong> OpenCV, YOLO, Detectron2.<br>
-                    <strong>Big Data y Análisis Distribuido:</strong> PySpark, Apache Hadoop, Apache Kafka, Databricks, AWS EMR.<br>
-                    <strong>Visualización de Datos:</strong> Matplotlib, Seaborn, Plotly, Bokeh, Altair, Tableau, Power BI.<br>
-                    <strong>Web Scraping y Automatización:</strong> BeautifulSoup, Scrapy, Selenium.<br>
-                    <strong>Algoritmos y Técnicas de IA:</strong><br>
-                    <strong>Supervisados y No Supervisados:</strong> Regresiones, K-Means, SVM, Redes Bayesianas.<br>
-                    <strong>Ensamblaje de Modelos:</strong> Bagging, Boosting (AdaBoost, Gradient Boosting), Random Forest.<br>
-                    <strong>Optimización de Hiperparámetros:</strong> Grid Search, Random Search, Bayesian Optimization.<br>
-                    <strong>Reducción de Dimensiones:</strong> PCA, t-SNE, UMAP.<br>
-                    <strong>Modelado Predictivo y Series Temporales:</strong> ARIMA, Prophet, LSTM para Series Temporales.
+                    <span class="es">Seguridad de aplicaciones, cifrado de datos, autenticación y autorización, protección contra ataques XSS y CSRF, seguridad en la nube.</span><span class="en" style="display:none;">Application security, data encryption, authentication and authorization, protection against XSS and CSRF attacks, cloud security.</span>
                 </p>
             </div>
         </div>
     </section>
-    
-    
-    
 
     <section id="experience" class="content-section">
-        <h2>Experiencia Laboral</h2>
-
-        <div class="experience-grid">
-
-            <div class="experience-entry">
-                <h4>Ingeniero de Software en el Departamento de Defensa Aeroespacial</h4>
-                <h5>Indra (España) | Enero 2023 - Agosto 2024</h5>
-                <p>Desarrollo de emuladores para señales satelitales...</p>
-                <a href="#" class="see-more" data-id="indra">Ver más</a>
-                <div class="more-info" id="indra" style="display: none;">
-                    <p>
-                        Durante mi tiempo en Indra, trabajé en el Departamento de Defensa Aeroespacial, participando en proyectos críticos relacionados con la gestión y operación de satélites. Mi rol principal incluía el desarrollo de emuladores para señales satelitales, los cuales eran esenciales para simular el comportamiento de los sistemas en escenarios reales.
-                        Estos emuladores eran altamente complejos, diseñados para correr en paralelo con precisión milimétrica, ya que cualquier desviación en los tiempos de procesamiento podía resultar en errores significativos de localización. Para asegurar la integridad de las señales, empleé algoritmos avanzados de inteligencia artificial y técnicas de física para la corrección de ruido, garantizando que los datos procesados fueran lo más precisos y fiables posible.
-                        Tecnologías y herramientas utilizadas:
-                        Lenguajes de programación: Python, C.
-                        Procesos paralelos: Implementación de procesos en paralelo usando librerías especializadas de Python y C para asegurar la sincronización precisa.
-                        Inteligencia artificial y física aplicada: Diseño y desarrollo de algoritmos para la reducción de ruido y mejora de señales.
-                        Entorno de desarrollo: Utilización de Docker para la creación y gestión de entornos de desarrollo consistentes.
-                        Gestión de repositorios: Trabajo en una red privada, diseñada específicamente para la misión, garantizando la seguridad y confidencialidad de la información, en lugar de utilizar repositorios públicos como GitHub.
-                        Este proyecto requirió un enfoque altamente disciplinado y meticuloso, considerando la sensibilidad de las operaciones y la necesidad de precisión extrema en todos los aspectos del desarrollo.
-                    </p>
-                </div>
-            </div>
-    
-            <div class="experience-entry">
-                <h4>Teach Lead</h4>
-                <h5>Emergencias (Argentina) | Febrero 2021 - Diciembre 2022</h5>
-                <p>A cargo de un equipo de desarrollo de 43 personas...</p>
-                <a href="#" class="see-more" data-id="emergencias">Ver más</a>
-                <div class="more-info" id="emergencias" style="display: none;">
-                    <p>
-                        A cargo de un equipo de desarrollo de 43 personas, profesionales de: Backend, Frontend, Mobile, Data Science, Arquitectos de Datos, Devops , QA , UX/UI . 
-                        Planeamiento de presupuesto y seguimiento del proyecto Mobile y Web, comunicación directa con el CTO de la compañía. Desarrollo de un software limpio, escalable, documentado y con sus patrones de Diseño apropiado.  Trabajando con metodología Agile enfocado al marco Scrum. 
-                        Migración de todos datos on-premise a Cloud. 
-                        Todos los microservicios subidos a GitHub tenían su proceso de CICD con los pipelines hecho por nuestra cuenta en .yalm  , con sus test unitarios. Con docker y su manejo de dependencias.  
-                        Implementacion de machine learning y deep learning con el equipo de Data , analizando datos masivos de datos Clínicos. 
-                        Stack Tecnológico :  
-                        Python, Django, ,NumPy, Pandas, SciPy, OpenCV,TensorFlow, PyTorch, PySpark, Unittest, Selenium , Java Script, SQL , PostgreSQL, Docker y Kubernetes , .YALM , ReactJs , Kotlin , Swift ,AWS y HUAWEI Could, manejo de versiones con Git y GitHub 
-                    </p>
-                </div>
-            </div>
-    
-            <div class="experience-entry">
-                <h4>Head of Data Science</h4>
-                <h5>Raine and Horne (Dubai), Abril 2019 - Febrero 2020</h5>
-                <p>A cargo del equipo de Datos...</p>
-                <a href="#" class="see-more" data-id="raine-and-horne">Ver más</a>
-                <div class="more-info" id="raine-and-horne" style="display: none;">
-                    <p>
-                        A cargo del equipo de Datos.
-                        Análisis y estudio de mercado a través de la implementación de data science. Realizábamos Scraping y con esto descubríamos posibles leads , estudio de comportamiento , entre otros.
-                        Desarrollo de algoritmos tanto de machine learning como de deep learning. Modelos de Clasificación, Clustering , Arboles de decisiones  , xgboost, LSTM ,Convolucionales(CNN), Reducción de dimensiones, NLP , entre otros.
-                        Mostrábamos los datos en herramientas de fácil visualización para los directivos , con tableau. 
-                        Stack Tecnológico : 
-                        Python, NumPy, Pandas, SciPy,  OpenCV, Keras, Scikit-Learn, TensorFlow, PyTorch, Matplotlib, Seaborn, SQL, NoSQL, PySpark, Databrick, Git, GitHub
-                    </p>
-                </div>
-            </div>
-    
-
-            <div class="experience-entry">
-                <h4>Data science</h4>
-                <h5>Almundo (Argentina), Mayo 2018 - Marzo 2019</h5>
-                <p>Desarrollador/programador Data Science.Crear algoritmos como Cross Selling para vender vuelos, renta de autos...</p>
-                <a href="#" class="see-more" data-id="almundo">Ver más</a>
-                <div class="more-info" id="almundo" style="display: none;">
-                    <p>
-                        Desarrollador/programador Data Science 
-                        Crear algoritmos como Cross Selling para vender vuelos, renta de autos,  excursiones,  hoteles y cruceros. Analisis de Datos mediante algoritmos de clustering, visualización de estos internamente en el equipo (con Matplotleab y Seaborn) y externamente ( para gerencia , marketing y equipos no tecnicos con Tableau) 
-                        Stack Tecnológico : Python,NumPy, Pandas, BeautifulSoup, Scrapy, Selenium, MongoDB,  SciPy, OpenCV, Keras, Scikit-Learn, TensorFlow, PyTorch, Matplotlib, Seaborn, SQL, NoSQL, Spark,  Git, GitHub
-                    </p>
-                </div>
-            </div>
-
-            <div class="experience-entry">
-                <h4>Free lance</h4>
-                <h5>International, Junio 2017 - Actualidad</h5>
-                <p>Siempre estoy abierto a oportunidades freelance que me permitan aplicar mis conocimientos en el desarrollo de aplicaciones móviles, web, y consultorías tecnológicas.</p>
-                <a href="#" class="see-more">Ver más</a>
-            </div>
-            <!-- Más experiencias aquí -->
+        <h3><span class="es">Experiencia</span><span class="en" style="display:none;">Experience</span></h3>
+        <div class="experience-item">
+            <h4><span class="es">Data Scientist</span><span class="en" style="display:none;">Data Scientist</span> | <span class="es">Innovación AI</span><span class="en" style="display:none;">Innovation AI</span></h4>
+            <p><span class="es">Febrero 2020 - Presente</span><span class="en" style="display:none;">February 2020 - Present</span></p>
+            <p><span class="es">Desarrollé modelos predictivos para optimizar procesos empresariales, realizando análisis de datos y visualización para la toma de decisiones estratégicas.</span><span class="en" style="display:none;">Developed predictive models to optimize business processes, conducting data analysis and visualization for strategic decision-making.</span></p>
+        </div>
+        <div class="experience-item">
+            <h4><span class="es">Full Stack Developer</span><span class="en" style="display:none;">Full Stack Developer</span> | <span class="es">Tech Solutions</span><span class="en" style="display:none;">Tech Solutions</span></h4>
+            <p><span class="es">Mayo 2017 - Enero 2020</span><span class="en" style="display:none;">May 2017 - January 2020</span></p>
+            <p><span class="es">Desarrollé y mantuve aplicaciones web y móviles, integrando diversas tecnologías y asegurando el cumplimiento de los estándares de calidad y seguridad.</span><span class="en" style="display:none;">Developed and maintained web and mobile applications, integrating various technologies and ensuring compliance with quality and security standards.</span></p>
         </div>
     </section>
 
     <section id="education" class="content-section">
-        <h2>Formación Académica</h2>
-        <ul>
-            <p>Master en Data Science (UBA)</p>
-            <p>Data Science Curso (Digital House)</p>
-            <p>Licenciado en Administración de empresas</p>
-        </ul>
+        <h3><span class="es">Formación</span><span class="en" style="display:none;">Education</span></h3>
+        <div class="education-item">
+            <h4><span class="es">Máster en Ciencia de Datos</span><span class="en" style="display:none;">Master's in Data Science</span></h4>
+            <p><span class="es">Universidad de Barcelona</span><span class="en" style="display:none;">University of Barcelona</span></p>
+            <p><span class="es">2018 - 2019</span><span class="en" style="display:none;">2018 - 2019</span></p>
+        </div>
+        <div class="education-item">
+            <h4><span class="es">Ingeniería en Sistemas de Información</span><span class="en" style="display:none;">Bachelor's in Information Systems Engineering</span></h4>
+            <p><span class="es">Universidad de Buenos Aires</span><span class="en" style="display:none;">University of Buenos Aires</span></p>
+            <p><span class="es">2013 - 2017</span><span class="en" style="display:none;">2013 - 2017</span></p>
+        </div>
     </section>
 
     <section id="contact" class="content-section">
-        <h2>Contacto</h2>
-        <p> <span class="material-icons">mail</span> Email: <a href="mailto:Lemos.ema@gmail.com"> Lemos.ema@gmail.com</a></p>
-        <p> <span class="material-icons">smartphone</span> Cel: +34 627602177</p>
-        <p> <span class="material-icons">location_on</span> MADRID</p>
+        <h3><span class="es">Contacto</span><span class="en" style="display:none;">Contact</span></h3>
+        <p><span class="es">Correo Electrónico: <a href="mailto:emanuel.lemos@example.com">emanuel.lemos@example.com</a></span><span class="en" style="display:none;">Email: <a href="mailto:emanuel.lemos@example.com">emanuel.lemos@example.com</a></span></p>
+        <p><span class="es">LinkedIn: <a href="https://www.linkedin.com/in/emanuel-lemos" target="_blank">linkedin.com/in/emanuel-lemos</a></span><span class="en" style="display:none;">LinkedIn: <a href="https://www.linkedin.com/in/emanuel-lemos" target="_blank">linkedin.com/in/emanuel-lemos</a></span></p>
+        <p><span class="es">GitHub: <a href="https://github.com/emanuel-lemos" target="_blank">github.com/emanuel-lemos</a></span><span class="en" style="display:none;">GitHub: <a href="https://github.com/emanuel-lemos" target="_blank">github.com/emanuel-lemos</a></span></p>
     </section>
-
-    <footer>
-        <p>&copy; 2024 Emanuel Lemos - Todos los derechos reservados</p>
-    </footer>
-
-    <script src="scripts/main.js"></script>
 </body>
 </html>

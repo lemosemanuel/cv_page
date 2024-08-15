@@ -42,3 +42,13 @@ document.getElementById('skill-search').addEventListener('input', function() {
         }
     });
 });
+
+function toggleLanguage() {
+    const isEnglish = document.querySelector('.en').style.display === 'block';
+
+    document.querySelectorAll('.es').forEach(elem => elem.style.display = isEnglish ? 'none' : 'block');
+    document.querySelectorAll('.en').forEach(elem => elem.style.display = isEnglish ? 'block' : 'none');
+
+    const button = document.getElementById('language-toggle');
+    button.textContent = isEnglish ? 'Cambiar a Inglés' : 'Switch to English';
+}
